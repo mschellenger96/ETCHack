@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 .vscode/settings.json
 .vscode
 *.pyc
+=======
+vis_utils.pyc
+>>>>>>> c9e7131099cb49be24fc19ecb8c79f9df1a7b970
