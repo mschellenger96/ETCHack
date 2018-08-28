@@ -5,7 +5,7 @@ stations = ["12th", "16th", "19th", "24th", "ashb", "antc", "balb",
 "bayf", "cast", "civc", "cols", "colm", "conc", "daly", "dbrk", "dubl", 
 "deln", "plza", "embr", "frmt", "ftvl", "glen", "hayw", "lafy", "lake", 
 "mcar", "mlbr", "mont", "nbrk", "ncon", "oakl", "orin", "pitt", "pctr", 
-"phil", "powl", "rich", "rock", "sbrn", "sfia", "shay", "ssan", "ucty", 
+"phil", "powl", "rich", "rock", "sanl", "sbrn", "sfia", "shay", "ssan", "ucty", 
 "warm", "wcrk", "wdub", "woak"]
 
 tenantID = "REPLACE"
