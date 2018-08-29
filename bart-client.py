@@ -15,7 +15,7 @@ stations = ["12th", "16th", "19th", "24th", "ashb", "antc", "balb",
 "phil", "powl", "rich", "rock", "sbrn", "sfia", "shay", "ssan", "ucty", 
 "warm", "wcrk", "wdub", "woak"]
 
-#AddKeys
+#Replace
 
 client = SdsClient(tenantID, address, resource, Authority, clientId, clientSecret)
 
