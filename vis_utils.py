@@ -8,6 +8,11 @@ stations = {"12th" : (604, 375), "16th" : (32, 489), "19th" : (540, 350), "24th"
 "phil" : (831, 194), "powl" : (82, 455), "rich" : (153, 143), "rock" : (516, 301), "sbrn" : (134, 690), "sfia" : (320, 695), "shay" : (593, 737), "ssan" : (60, 658), "ucty" : (645, 795), 
 "warm" : (879, 926), "wcrk" : (673, 219), "wdub" : (798, 633), "woak" : (218, 384), "sanl" : (618, 535)}
 
+
+#ClientKeys
+
+client = SdsClient(tenantID, address, resource, Authority, clientId, clientSecret)
+
 def on_mouse(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
         print('x = %d, y = %d'%(x, y))
@@ -30,3 +35,12 @@ def get_closest_station(click_tuple):
 			min_dist = cur_dist
 			min_station = key
 	print min_station
+
+
+def get_last(station):
+	try:
+		last_val = client.getLastValue(namespaceId, station, Data)
+		return str(last_val.ArriveTime)
+	except:
+		return "No Data"
+
