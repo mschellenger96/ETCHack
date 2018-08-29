@@ -18,7 +18,7 @@ stations = {"12th" : (604, 375), "16th" : (0, 489), "19th" : (540, 350), "24th" 
 
 station_arrive_times = {}
 
-#replace
+#Replace
 
 client = SdsClient(tenantID, address, resource, Authority, clientId, clientSecret)
 
