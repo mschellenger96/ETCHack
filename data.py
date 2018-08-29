@@ -3,19 +3,13 @@ import inspect
 
 class Data:
 
-    def __init__(self, time, destination, leaveTime, arriveTime, fare):
+    def __init__(self, time=None, destination=None, leaveTime=None, arriveTime=None, fare=None):
         self.time = time
         self.destination = destination
         self.leaveTime = leaveTime
         self.arriveTime = arriveTime
         self.fare = fare
 
-    def __init__(self):
-        self.time = None
-        self.destination = None
-        self.leaveTime = None
-        self.arriveTime = None
-        self.fare = None
 
     @property
     def Time(self):
