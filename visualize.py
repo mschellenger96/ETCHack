@@ -21,7 +21,7 @@ def print_locations():
     font_color = (0, 0, 0)
     line_type = 1
 
-    for key, value in vis_utils.stations.iteritems():     
+    for key, value in vis_utils.stations.iteritems():   
         cv2.putText(img, vis_utils.get_last(key), value, font, font_scale, font_color, line_type)
 
 

@@ -1,5 +1,13 @@
 import cv2
 import math
+import requests
+import json
+from data import Data
+from datetime import datetime
+import time as Time
+
+from SdsClient import SdsClient
+from SdsStream import SdsStream
 
 stations = {"12th" : (604, 375), "16th" : (32, 489), "19th" : (540, 350), "24th" : (25, 507), "ashb" : (280, 294), "antc" : (890, 23), "balb" : (22, 542), 
 "bayf" : (616, 568), "cast" : (686, 626), "civc" : (14, 470), "cols" : (788, 503), "colm" : (84, 626), "conc" : (731, 166), "daly" : (50, 595), "dbrk" : (199, 271), "dubl" : (
@@ -9,7 +17,7 @@ stations = {"12th" : (604, 375), "16th" : (32, 489), "19th" : (540, 350), "24th"
 "warm" : (879, 926), "wcrk" : (673, 219), "wdub" : (798, 633), "woak" : (218, 384), "sanl" : (618, 535)}
 
 
-#ClientKeys
+#AddKeys
 
 client = SdsClient(tenantID, address, resource, Authority, clientId, clientSecret)
 

@@ -1,4 +1,5 @@
 import json
+import inspect
 
 class Data:
 
@@ -70,7 +71,6 @@ class Data:
 
         properties = inspect.getmembers(Data, lambda o: isinstance(o, property))
         for p in properties:
-            print p
             if p[0] in content:
                 setattr(data, p[0], content[p[0]])
         return data
